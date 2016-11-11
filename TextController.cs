@@ -42,7 +42,7 @@ public class TextController : MonoBehaviour {
 		
 	}
 	
-	
+	#region State Handler Methods
 	void cell () {
 		text.text = "You are in a prison cell, and you want to escape. There are " +
 					"some dirty sheets on the bed, a mirror on the wall, and the door" +
@@ -188,5 +188,5 @@ public class TextController : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.P)) 		{myState = States.in_closet;}
 		else if (Input.GetKeyDown(KeyCode.S)) 	{myState = States.stairs_1;}
 			}	
-	
+	#endregion
 }
